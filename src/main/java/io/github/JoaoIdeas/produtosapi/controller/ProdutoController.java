@@ -30,7 +30,7 @@ public class ProdutoController {
     public Produto obterPorId(@PathVariable("id") String id){
 //        Optional<Produto> produto = produtoRepository.findById(id);
 //        return produto.isPresent() ? produto.get() : null;
-
+//aa
         return produtoRepository.findById(id).orElse(null);
     }
 }
